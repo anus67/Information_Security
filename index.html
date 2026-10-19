@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="theme-color" content="#0a1020" />
+<title>Information Security — A Scrolling Presentation</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div class="progress-track"><div class="progress-bar" id="progress"></div></div>
+<header class="topbar">
+  <a class="brand" href="#slide-1" aria-label="Information Security home"><span class="brand-mark">◈</span><span>SECURITY<span class="brand-muted"> / FIELD GUIDE</span></span></a>
+  <div class="top-meta"><span class="live-dot"></span><span>INFORMATION SECURITY</span></div>
+  <button class="menu-btn" id="overviewBtn" aria-label="Open slide overview">OVERVIEW <span>↗</span></button>
+</header>
+
+<main>
+<section class="slide hero" id="slide-1" data-slide="01">
+  <div class="hero-grid"></div><div class="orb orb-a"></div><div class="orb orb-b"></div>
+  <div class="slide-inner hero-inner">
+    <div class="eyebrow reveal"><span class="eyebrow-line"></span> THE DIGITAL TRUST SERIES <span class="eyebrow-number">01 — 12</span></div>
+    <div class="hero-copy">
+      <p class="hero-kicker reveal">Protect what matters.</p>
+      <h1 class="reveal">Information<br><span class="outline-text">Security</span><span class="title-period">.</span></h1>
+      <p class="hero-desc reveal">Understanding the principles, threats, and practices that keep information safe in a connected world.</p>
+      <a href="#slide-2" class="scroll-cta reveal"><span class="scroll-icon">↓</span><span>SCROLL TO EXPLORE</span></a>
+    </div>
+    <div class="hero-art reveal">
+      <div class="orbit orbit-1"></div><div class="orbit orbit-2"></div><div class="orbit orbit-3"></div>
+      <div class="shield"><svg viewBox="0 0 180 210" role="img" aria-label="Abstract security shield"><path d="M90 8 L157 34 V91 C157 137 127 174 90 198 C53 174 23 137 23 91 V34 Z" fill="rgba(84,157,255,.08)" stroke="#76b5ff" stroke-width="2"/><path d="M90 24 L143 44 V91 C143 128 120 157 90 178 C60 157 37 128 37 91 V44 Z" fill="none" stroke="rgba(118,181,255,.32)"/><rect x="64" y="86" width="52" height="42" rx="8" fill="#6db3ff"/><path d="M74 86 V72 C74 50 106 50 106 72 V86" fill="none" stroke="#6db3ff" stroke-width="7" stroke-linecap="round"/><circle cx="90" cy="105" r="5" fill="#0a1020"/><path d="M90 109 V117" stroke="#0a1020" stroke-width="4" stroke-linecap="round"/></svg></div>
+      <div class="float-tag tag-top"><span class="tag-dot"></span> SYSTEM STATUS <strong>PROTECTED</strong></div>
+      <div class="float-tag tag-bottom"><span>ENCRYPTION</span><strong>AES-256 <i>●</i></strong></div>
+      <div class="tiny-coordinate">37° 46' 49.3" N<br>122° 25' 09.1" W</div>
+    </div>
+    <div class="hero-footer"><span>01 / INTRODUCTION</span><span>SCROLL-DRIVEN PRESENTATION</span><span>EST. FOR A SAFER DIGITAL WORLD</span></div>
+  </div>
+</section>
+
+<section class="slide light" id="slide-2" data-slide="02">
+  <div class="slide-inner split">
+    <div class="section-copy">
+      <div class="eyebrow reveal"><span class="eyebrow-line"></span> THE BIG PICTURE <span class="eyebrow-number">02 — 12</span></div>
+      <h2 class="reveal">What is information <span class="blue-text">security?</span></h2>
+      <p class="lead reveal">Information security is the practice of protecting information from unauthorized access, use, disclosure, disruption, modification, or destruction.</p>
+      <p class="body-copy reveal">It protects information wherever it lives — on a device, in a database, on paper, or moving across a network.</p>
+      <div class="definition-note reveal"><span class="note-icon">↗</span><span><strong>The goal:</strong> make information available to the right people, in the right way, at the right time.</span></div>
+    </div>
+    <div class="visual-panel reveal">
+      <div class="panel-label">INFORMATION LIFECYCLE <span>01—04</span></div>
+      <div class="lifecycle">
+        <div class="life-node"><div class="life-icon">▤</div><strong>CREATE</strong><span>Data is generated</span></div><div class="life-link"></div>
+        <div class="life-node"><div class="life-icon">⌁</div><strong>STORE</strong><span>Data is preserved</span></div><div class="life-link"></div>
+        <div class="life-node"><div class="life-icon">⇄</div><strong>SHARE</strong><span>Data is transmitted</span></div><div class="life-link"></div>
+        <div class="life-node"><div class="life-icon">⌫</div><strong>DISPOSE</strong><span>Data is retired</span></div>
+      </div>
+      <div class="panel-bottom"><span>PROTECT DATA AT EVERY STAGE</span><span class="pulse-bars"><i></i><i></i><i></i><i></i><i></i></span></div>
+    </div>
+  </div>
+</section>
+
+<section class="slide dark" id="slide-3" data-slide="03">
+  <div class="slide-inner">
+    <div class="eyebrow reveal"><span class="eyebrow-line"></span> THE CORE FRAMEWORK <span class="eyebrow-number">03 — 12</span></div>
+    <div class="center-heading"><h2 class="reveal">The <span class="blue-text">CIA triad.</span></h2><p class="lead reveal">Three foundational principles guide how we protect information.</p></div>
+    <div class="cia-grid">
+      <article class="cia-card reveal"><div class="card-index">01 / C</div><div class="cia-symbol"><svg viewBox="0 0 100 100"><path d="M50 8 L82 20 V47 C82 68 68 83 50 93 C32 83 18 68 18 47 V20 Z" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="50" cy="43" r="10" fill="none" stroke="currentColor" stroke-width="2"/><path d="M32 70 C33 56 67 56 68 70" fill="none" stroke="currentColor" stroke-width="2"/></svg></div><h3>Confidentiality</h3><p>Only authorized people can access sensitive information.</p><div class="card-example"><span>EXAMPLE</span> Access permissions and encryption</div></article>
+      <article class="cia-card featured reveal"><div class="card-index">02 / I</div><div class="cia-symbol"><svg viewBox="0 0 100 100"><path d="M50 12 L60 35 L85 25 L75 49 L91 65 L65 67 L50 89 L39 66 L13 72 L25 49 L13 30 L39 34 Z" fill="none" stroke="currentColor" stroke-width="2"/><path d="M35 51 L45 61 L67 39" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></div><h3>Integrity</h3><p>Information remains accurate, complete, and unaltered without authorization.</p><div class="card-example"><span>EXAMPLE</span> Hash checks and version control</div></article>
+      <article class="cia-card reveal"><div class="card-index">03 / A</div><div class="cia-symbol"><svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="35" fill="none" stroke="currentColor" stroke-width="2"/><path d="M50 28 V51 L67 61" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/><path d="M24 19 L17 27 M76 19 L83 27" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div><h3>Availability</h3><p>Authorized users can access systems and information when needed.</p><div class="card-example"><span>EXAMPLE</span> Backups and resilient systems</div></article>
+    </div>
+    <div class="bottom-insight reveal"><span class="insight-star">✳</span> Strong security balances all three — not just one.</div>
+  </div>
+</section>
+
+<section class="slide light" id="slide-4" data-slide="04">
+  <div class="slide-inner split threat-layout">
+    <div class="section-copy">
+      <div class="eyebrow reveal"><span class="eyebrow-line"></span> KNOW THE RISKS <span class="eyebrow-number">04 — 12</span></div>
+      <h2 class="reveal">The threat <span class="blue-text">landscape.</span></h2>
+      <p class="lead reveal">A threat is anything that can exploit a weakness and harm data, systems, or people.</p>
+      <p class="body-copy reveal">Threats may come from criminals, careless mistakes, technical failures, or unexpected events. Knowing the risk helps us prepare before an incident happens.</p>
+      <div class="risk-scale reveal"><span>LOWER EXPOSURE</span><div class="risk-line"><i></i><i></i><i></i><i></i><i></i></div><span>HIGHER EXPOSURE</span></div>
+    </div>
+    <div class="threat-list">
+      <div class="threat-item reveal"><span class="threat-icon">⌁</span><div><h3>Malware</h3><p>Malicious software designed to damage, spy, or disrupt.</p></div><span class="threat-arrow">↗</span></div>
+      <div class="threat-item reveal"><span class="threat-icon">✉</span><div><h3>Phishing</h3><p>Deceptive messages that trick people into revealing information.</p></div><span class="threat-arrow">↗</span></div>
+      <div class="threat-item reveal"><span class="threat-icon">◉</span><div><h3>Social engineering</h3><p>Manipulating people into unsafe actions or disclosures.</p></div><span class="threat-arrow">↗</span></div>
+      <div class="threat-item reveal"><span class="threat-icon">⌘</span><div><h3>Insider risks</h3><p>Harm caused by misuse, mistakes, or compromised accounts.</p></div><span class="threat-arrow">↗</span></div>
+      <div class="threat-item reveal"><span class="threat-icon">⚡</span><div><h3>System failure</h3><p>Outages, lost devices, and physical or environmental damage.</p></div><span class="threat-arrow">↗</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="slide image-slide" id="slide-5" data-slide="05">
+  <div class="image-backdrop"></div><div class="image-shade"></div>
+  <div class="slide-inner image-content">
+    <div class="eyebrow reveal"><span class="eyebrow-line"></span> HUMAN-CENTERED SECURITY <span class="eyebrow-number">05 — 12</span></div>
+    <div class="image-heading"><h2 class="reveal">The human<br><span class="outline-text">factor.</span></h2><p class="lead reveal">Technology can be strong. One rushed click can still open the door.</p></div>
+    <div class="phishing-demo reveal">
+      <div class="mail-top"><span class="mail-dot"></span><span class="mail-dot"></span><span class="mail-dot"></span><span class="mail-label">MESSAGE PREVIEW</span><span class="mail-warning">SUSPICIOUS</span></div>
+      <div class="mail-body"><div class="sender-avatar">!</div><div class="mail-content"><div class="mail-sender">Account Support <span>via unknown domain</span></div><div class="mail-subject">Urgent: verify your account now</div><p>Unexpected urgency, unfamiliar links, and requests for credentials are warning signs. Pause before you click.</p><div class="fake-link">Review account →</div></div></div>
+      <div class="mail-footer"><span>EXAMPLE OF A PHISHING RED FLAG</span><span>DON'T TRUST THE DISPLAY NAME</span></div>
+    </div>
+    <div class="image-footer-note reveal"><span class="note-pulse"></span> STOP · CHECK THE SENDER · VERIFY THROUGH A TRUSTED CHANNEL</div>
+  </div>
+</section>
+
+<section class="slide dark" id="slide-6" data-slide="06">
+  <div class="slide-inner split">
+    <div class="section-copy">
+      <div class="eyebrow reveal"><span class="eyebrow-line"></span> BUILD THE DEFENSE <span class="eyebrow-number">06 — 12</span></div>
+      <h2 class="reveal">Layers of <span class="blue-text">protection.</span></h2>
+      <p class="lead reveal">No single tool stops every threat. Effective security uses multiple safeguards that support one another.</p>
+      <p class="body-copy reveal">If one control fails, another can still reduce the chance or impact of an attack. This is known as defense in depth.</p>
+      <div class="definition-note dark-note reveal"><span class="note-icon">◎</span><span><strong>Think in layers:</strong> prevent, detect, respond, and recover.</span></div>
+    </div>
+    <div class="layers-visual reveal">
+      <div class="layer-ring ring-outer"><span>POLICIES & PEOPLE</span></div>
+      <div class="layer-ring ring-mid"><span>NETWORK & DEVICES</span></div>
+      <div class="layer-ring ring-inner"><span>IDENTITY & ACCESS</span></div>
+      <div class="layer-core"><span>DATA</span><div class="core-lock">⌑</div></div>
+      <div class="layer-legend"><span><i class="legend-dot one"></i>Governance</span><span><i class="legend-dot two"></i>Technical controls</span><span><i class="legend-dot three"></i>Data protection</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="slide light" id="slide-7" data-slide="07">
+  <div class="slide-inner">
+    <div class="eyebrow reveal"><span class="eyebrow-line"></span> IDENTITY IS THE NEW PERIMETER <span class="eyebrow-number">07 — 12</span></div>
+    <div class="center-heading left-heading"><h2 class="reveal">Access should be <span class="blue-text">earned.</span></h2><p class="lead reveal">Verify identity, limit permissions, and add barriers to account takeover.</p></div>
+    <div class="access-grid">
+      <article class="access-card reveal"><div class="access-top"><span>01</span><span class="access-symbol">◉</span></div><h3>Strong passwords</h3><p>Use long, unique passwords or passphrases for every account.</p><div class="password-visual"><span>••••••••••••••••</span><span class="strength">STRONG</span></div></article>
+      <article class="access-card reveal"><div class="access-top"><span>02</span><span class="access-symbol">⌁</span></div><h3>Multi-factor authentication</h3><p>Add another verification step beyond a password whenever possible.</p><div class="mfa-visual"><span class="mfa-check">✓</span><span>Identity verified</span><span class="mfa-lock">⌑</span></div></article>
+      <article class="access-card reveal"><div class="access-top"><span>03</span><span class="access-symbol">⊙</span></div><h3>Least privilege</h3><p>Give each person only the access needed to do their job.</p><div class="permission-visual"><span class="perm active">READ</span><span class="perm">WRITE</span><span class="perm">ADMIN</span></div></article>
+    </div>
+    <div class="principle-strip reveal"><span>THE RULE</span><strong>Trust should be verified. Access should be limited. Activity should be reviewed.</strong><span>→</span></div>
+  </div>
+</section>
+
+<section class="slide dark" id="slide-8" data-slide="08">
+  <div class="slide-inner split">
+    <div class="section-copy">
+      <div class="eyebrow reveal"><span class="eyebrow-line"></span> KEEP SECRETS SECRET <span class="eyebrow-number">08 — 12</span></div>
+      <h2 class="reveal">Encryption & <span class="blue-text">data privacy.</span></h2>
+      <p class="lead reveal">Encryption transforms readable information into protected data that requires the correct key to read.</p>
+      <p class="body-copy reveal">It helps protect data in transit and at rest. Privacy complements security by guiding how personal information is collected, used, shared, and retained.</p>
+      <div class="definition-note dark-note reveal"><span class="note-icon">⌑</span><span><strong>Remember:</strong> encryption helps protect data, but it does not make every system or user action safe.</span></div>
+    </div>
+    <div class="encryption-panel reveal">
+      <div class="enc-label">HOW ENCRYPTION WORKS <span>SIMPLIFIED</span></div>
+      <div class="enc-flow"><div class="enc-block"><div class="enc-icon">▤</div><strong>Plaintext</strong><code>HELLO WORLD</code></div><div class="enc-arrow"><span>→</span><small>ENCRYPT</small></div><div class="enc-block encrypted"><div class="enc-icon">⌑</div><strong>Ciphertext</strong><code>8F2A·91C7·0B4D</code></div></div>
+      <div class="key-row"><span class="key-symbol">⌑</span><div><strong>Decryption key</strong><p>Authorized key reverses the transformation.</p></div><span class="key-status">RESTRICTED</span></div>
+      <div class="data-chips"><span>DATA AT REST</span><span>DATA IN TRANSIT</span><span>KEY MANAGEMENT</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="slide light" id="slide-9" data-slide="09">
+  <div class="slide-inner split">
+    <div class="section-copy">
+      <div class="eyebrow reveal"><span class="eyebrow-line"></span> RESILIENCE BY DESIGN <span class="eyebrow-number">09 — 12</span></div>
+      <h2 class="reveal">Backups & <span class="blue-text">recovery.</span></h2>
+      <p class="lead reveal">Security is not only about preventing incidents. It is also about recovering when something goes wrong.</p>
+      <p class="body-copy reveal">Maintain tested backups, keep a recovery plan, and store a protected copy that attackers or device failures cannot easily reach.</p>
+      <div class="recovery-stats reveal"><div><strong>3</strong><span>copies of data</span></div><div><strong>2</strong><span>different media</span></div><div><strong>1</strong><span>off-site copy</span></div></div>
+      <p class="micro-copy reveal">The 3-2-1 rule is a useful starting point; adapt it to your risks and recovery needs.</p>
+    </div>
+    <div class="recovery-visual reveal">
+      <div class="backup-source"><span class="source-icon">▤</span><strong>PRIMARY DATA</strong><small>Workstation / server</small></div>
+      <div class="backup-branches"><i></i><i></i></div>
+      <div class="backup-destinations"><div class="backup-dest"><span>▣</span><strong>LOCAL BACKUP</strong><small>Separate device</small><b>01</b></div><div class="backup-dest cloud-dest"><span>☁</span><strong>OFF-SITE COPY</strong><small>Protected location</small><b>02</b></div></div>
+      <div class="restore-line"><span>↺</span><div><strong>TEST THE RESTORE</strong><small>A backup is only useful if recovery works.</small></div><span class="restore-status">READY</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="slide dark" id="slide-10" data-slide="10">
+  <div class="slide-inner">
+    <div class="eyebrow reveal"><span class="eyebrow-line"></span> PREPARE, DON'T PANIC <span class="eyebrow-number">10 — 12</span></div>
+    <div class="center-heading left-heading"><h2 class="reveal">When incidents <span class="blue-text">happen.</span></h2><p class="lead reveal">A clear response reduces confusion, limits damage, and supports recovery.</p></div>
+    <div class="incident-timeline">
+      <article class="incident-step reveal"><div class="step-top"><span>01</span><span class="step-icon">◎</span></div><h3>Identify</h3><p>Recognize suspicious activity and report it quickly.</p><span class="step-line"></span><small>NOTICE THE SIGNAL</small></article>
+      <article class="incident-step reveal"><div class="step-top"><span>02</span><span class="step-icon">⛨</span></div><h3>Contain</h3><p>Limit spread using approved response procedures.</p><span class="step-line"></span><small>LIMIT THE IMPACT</small></article>
+      <article class="incident-step reveal"><div class="step-top"><span>03</span><span class="step-icon">⌁</span></div><h3>Eradicate</h3><p>Remove the cause and close the exploited weakness.</p><span class="step-line"></span><small>REMOVE THE CAUSE</small></article>
+      <article class="incident-step reveal"><div class="step-top"><span>04</span><span class="step-icon">↺</span></div><h3>Recover</h3><p>Restore safely, monitor systems, and learn from the event.</p><span class="step-line"></span><small>RETURN & IMPROVE</small></article>
+    </div>
+    <div class="incident-note reveal"><span>!</span><p>If you suspect an incident, follow your organization's reporting process. Don't delete evidence or improvise risky fixes.</p></div>
+  </div>
+</section>
+
+<section class="slide light" id="slide-11" data-slide="11">
+  <div class="slide-inner">
+    <div class="eyebrow reveal"><span class="eyebrow-line"></span> MAKE IT A HABIT <span class="eyebrow-number">11 — 12</span></div>
+    <div class="center-heading left-heading"><h2 class="reveal">Your everyday <span class="blue-text">security checklist.</span></h2><p class="lead reveal">Small, consistent habits make a meaningful difference.</p></div>
+    <div class="checklist-layout">
+      <div class="checklist reveal">
+        <label class="check-row"><input type="checkbox"><span class="custom-check"></span><span><strong>Update software</strong><small>Install trusted security updates promptly.</small></span><em>01</em></label>
+        <label class="check-row"><input type="checkbox"><span class="custom-check"></span><span><strong>Use MFA</strong><small>Enable multi-factor authentication on important accounts.</small></span><em>02</em></label>
+        <label class="check-row"><input type="checkbox"><span class="custom-check"></span><span><strong>Verify before clicking</strong><small>Check senders, links, and unexpected requests.</small></span><em>03</em></label>
+        <label class="check-row"><input type="checkbox"><span class="custom-check"></span><span><strong>Back up important files</strong><small>Keep protected copies and test recovery.</small></span><em>04</em></label>
+        <label class="check-row"><input type="checkbox"><span class="custom-check"></span><span><strong>Share less, protect more</strong><small>Limit personal data and review permissions.</small></span><em>05</em></label>
+      </div>
+      <div class="checklist-side reveal"><div class="check-orbit"><div class="check-center">✓</div><span class="orbit-label orbit-label-a">UPDATE</span><span class="orbit-label orbit-label-b">VERIFY</span><span class="orbit-label orbit-label-c">PROTECT</span></div><div class="completion"><div><span>YOUR CHECKLIST</span><strong id="checkCount">0 / 5</strong></div><div class="completion-track"><i id="checkProgress"></i></div><small>Tick each habit as you review it.</small></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="slide closing" id="slide-12" data-slide="12">
+  <div class="closing-grid"></div><div class="closing-glow"></div>
+  <div class="slide-inner closing-inner">
+    <div class="eyebrow reveal"><span class="eyebrow-line"></span> THE TAKEAWAY <span class="eyebrow-number">12 — 12</span></div>
+    <div class="closing-content"><div class="closing-mark reveal">◈</div><h2 class="reveal">Security is<br><span class="outline-text">everyone's</span><br>responsibility<span class="title-period">.</span></h2><p class="lead reveal">Protect the data. Verify the person. Prepare for the unexpected.</p><div class="closing-pillars reveal"><span>CONFIDENTIALITY</span><i></i><span>INTEGRITY</span><i></i><span>AVAILABILITY</span></div><a class="back-top reveal" href="#slide-1">BACK TO THE BEGINNING <span>↑</span></a></div>
+    <div class="closing-footer"><span>INFORMATION SECURITY / FIELD GUIDE</span><span>END OF PRESENTATION</span><span>12 / 12</span></div>
+  </div>
+</section>
+</main>
+
+<nav class="side-nav" aria-label="Slide navigation">
+  <span class="side-label">CHAPTERS</span>
+  <a href="#slide-1" class="nav-dot active" aria-label="Slide 1" data-n="01"></a>
+  <a href="#slide-2" class="nav-dot" aria-label="Slide 2" data-n="02"></a>
+  <a href="#slide-3" class="nav-dot" aria-label="Slide 3" data-n="03"></a>
+  <a href="#slide-4" class="nav-dot" aria-label="Slide 4" data-n="04"></a>
+  <a href="#slide-5" class="nav-dot" aria-label="Slide 5" data-n="05"></a>
+  <a href="#slide-6" class="nav-dot" aria-label="Slide 6" data-n="06"></a>
+  <a href="#slide-7" class="nav-dot" aria-label="Slide 7" data-n="07"></a>
+  <a href="#slide-8" class="nav-dot" aria-label="Slide 8" data-n="08"></a>
+  <a href="#slide-9" class="nav-dot" aria-label="Slide 9" data-n="09"></a>
+  <a href="#slide-10" class="nav-dot" aria-label="Slide 10" data-n="10"></a>
+  <a href="#slide-11" class="nav-dot" aria-label="Slide 11" data-n="11"></a>
+  <a href="#slide-12" class="nav-dot" aria-label="Slide 12" data-n="12"></a>
+</nav>
+<div class="slide-counter"><span id="currentSlide">01</span><span class="counter-divider">/</span><span>12</span></div>
+<div class="overview" id="overview" aria-hidden="true"><div class="overview-head"><div><span class="eyebrow-line"></span> PRESENTATION INDEX</div><button id="closeOverview" aria-label="Close overview">✕</button></div><div class="overview-grid" id="overviewGrid"></div></div>
+<script src="script.js"></script>
+</body>
+</html>
